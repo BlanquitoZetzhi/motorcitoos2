@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpawnMerge : MonoBehaviour
 {
     public GameObject[] prefabs;
-    public float intervaloSpawn = 2f;
 
     private float timer;
 
@@ -13,7 +12,7 @@ public class SpawnMerge : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= intervaloSpawn)
+        if (timer >= RemoteConfigManager.spawnInterval)
         {
             SpawnObject();
             timer = 0f;
@@ -23,8 +22,8 @@ public class SpawnMerge : MonoBehaviour
     void SpawnObject()
     {
         GameObject prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
-        
-        Instantiate(prefabToSpawn);
+        GameObject obj = Instantiate(prefabToSpawn);
+        obj.transform.localScale = Vector3.one * RemoteConfigManager.objectScale;
     }
 }
 

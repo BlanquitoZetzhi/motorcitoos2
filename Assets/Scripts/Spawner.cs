@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] prefabs;
+    public GameObject[] prefabs; // Prefabs normales
+    public GameObject bombaPrefab; // Prefab de la bomba
     public float intervaloSpawn = 2f;
     public Vector2 AreaMinSpawn = new Vector2(-10f, -10f);
     public Vector2 AreaMaxSpawn = new Vector2(10f, 10f);
@@ -15,7 +16,7 @@ public class Spawner : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= intervaloSpawn)
+        if (timer >= RemoteConfigManager.spawnInterval) // remote config
         {
             SpawnObject();
             timer = 0f;
@@ -24,14 +25,25 @@ public class Spawner : MonoBehaviour
 
     void SpawnObject()
     {
-        GameObject prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
+        Vector3 spawnPosition = RemoteConfigManager.spawnRandomPositions
+            ? new Vector3(
+                Random.Range(AreaMinSpawn.x, AreaMaxSpawn.x),
+                Random.Range(AreaMinSpawn.y, AreaMaxSpawn.y),
+                0f)
+            : transform.position;
 
-        Vector3 spawnPosition = new Vector3(
-        Random.Range(AreaMinSpawn.x, AreaMaxSpawn.x),
-        Random.Range(AreaMinSpawn.y, AreaMaxSpawn.y),
-        0f
-    );
+        GameObject prefabToSpawn;
+        // 20% chance de spawn bomba
+        if (Random.value < 0.2f)
+        {
+            prefabToSpawn = bombaPrefab;
+        }
+        else
+        {
+            prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
+        }
 
-        Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+        GameObject obj = Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+        obj.transform.localScale = Vector3.one * RemoteConfigManager.objectScale;
     }
 }
