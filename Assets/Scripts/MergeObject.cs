@@ -37,6 +37,8 @@ public class MergeObject : MonoBehaviour
 
         if (level >= mergeManager.prefabs.Length - 1)
         {
+            // Máximo tier -> +1 token
+            CurrencyManager.Instance.AddToken(1);
             Explode();
             Destroy(other.gameObject);
         }
@@ -52,6 +54,6 @@ public class MergeObject : MonoBehaviour
     private void Explode()
     {
         Debug.Log("💥 ¡Zebra explotó!");
-        // Acá podés agregar efectos de explosión
+        // posible efecto
     }
 }

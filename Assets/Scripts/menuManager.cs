@@ -8,7 +8,15 @@ public class menuManager : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene("inGame");
+        if (StaminaManager.Instance.TryUseStamina())
+        {
+            SceneManager.LoadScene("inGame");
+        }
+        else
+        {
+            Debug.Log("No tenés stamina para jugar");
+            // posible pop up de que no se puede jugar
+        }
     }
 
     public void Perder()
