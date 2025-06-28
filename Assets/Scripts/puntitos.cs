@@ -42,4 +42,5 @@ public class puntitos : MonoBehaviour
         victoryTriggered = true;
         Debug.Log("🎉 ¡Ganaste! Puntos: " + score);
         SceneManager.LoadScene("Victoria"); // Cambia por escena
+    }
 }

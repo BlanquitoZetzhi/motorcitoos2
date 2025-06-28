@@ -172,7 +172,6 @@ MonoBehaviour:
   - {fileID: 7621229539458004022, guid: 72520c63c359c9e4e85dda9a29bb743f, type: 3}
   - {fileID: 7574260932632605651, guid: e4f15293be1e6dc4ca3135bd7e158cb1, type: 3}
   - {fileID: 3134472206386099091, guid: 262ee27517ffcdf4eadf9cb3aae5db98, type: 3}
-  intervaloSpawn: 6.5
 --- !u!1 &322040607
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 8197362050514187765, guid: 244a5a8b853a8c741adf0db7a3554c81, type: 3}
+  bombaPrefab: {fileID: 8197362050514187765, guid: 244a5a8b853a8c741adf0db7a3554c81, type: 3}
   intervaloSpawn: 5
   AreaMinSpawn: {x: -10, y: -5}
   AreaMaxSpawn: {x: 10, y: 5}
@@ -867,9 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c076df7c52f344db94a46624631242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 2
   limitSeconds: 0
-  seconds: 30
   dangerColor: {r: 0.9245283, g: 0.13519046, b: 0.13519046, a: 0}
   TimerText: {fileID: 2068439852}
 --- !u!1 &2068439850
@@ -1055,6 +1053,7 @@ MonoBehaviour:
   - {fileID: 7473728272056967072, guid: 40e6861d4df154347b420e2349542e05, type: 3}
   - {fileID: 3134472206386099091, guid: 262ee27517ffcdf4eadf9cb3aae5db98, type: 3}
   - {fileID: 7621229539458004022, guid: 72520c63c359c9e4e85dda9a29bb743f, type: 3}
+  bombaPrefab: {fileID: 8197362050514187765, guid: 244a5a8b853a8c741adf0db7a3554c81, type: 3}
   intervaloSpawn: 2
   AreaMinSpawn: {x: -10, y: -5}
   AreaMaxSpawn: {x: 10, y: 5}
