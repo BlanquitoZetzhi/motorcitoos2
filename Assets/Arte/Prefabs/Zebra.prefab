@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 3
+  explosionPrefab: {fileID: 8603657560237709848, guid: eda24a13702c6a44b9d9cfc6bfdb1971, type: 3}
 --- !u!114 &3588109508417171594
 MonoBehaviour:
   m_ObjectHideFlags: 0

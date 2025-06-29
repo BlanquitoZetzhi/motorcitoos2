@@ -9,6 +9,7 @@ public class MergeObject : MonoBehaviour
     private bool hasMerged = false;
     private MergeManager mergeManager;
     private puntitos scoreManager;
+    public GameObject explosionPrefab;
 
     void Start()
     {
@@ -43,23 +44,29 @@ public class MergeObject : MonoBehaviour
             scoreManager.AgregarPuntos(puntos);
         }
 
-        if (level >= mergeManager.prefabs.Length - 1)
+        // Si NO es el último nivel
+        if (level < mergeManager.prefabs.Length - 1)
         {
-            CurrencyManager.Instance.AddToken(1);
-            Explode();
+            mergeManager.SpawnMerged(level + 1, spawnPosition);
+
+            // Verificamos si el nuevo objeto será el último nivel
+            if (level + 1 == mergeManager.prefabs.Length - 1)
+            {
+                if (explosionPrefab != null)
+                {
+                    GameObject explosion = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
+                    Destroy(explosion, 1f);
+                }
+            }
+
             Destroy(other.gameObject);
         }
         else
         {
-           mergeManager.SpawnMerged(level + 1, spawnPosition);
-            Destroy(other.gameObject);
+            // Si este objeto ya era el último nivel (por seguridad)
+            CurrencyManager.Instance.AddToken(1);
         }
-     Destroy(gameObject);
-    }
 
-    private void Explode()
-    {
-        Debug.Log("💥 ¡Zebra explotó!");
-        // posible efecto
+        Destroy(gameObject);
     }
 }
