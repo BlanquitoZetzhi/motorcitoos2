@@ -10,7 +10,7 @@ public class menuManager : MonoBehaviour
     {
         if (StaminaManager.Instance.TryUseStamina())
         {
-            SceneManager.LoadScene("LevelOne");
+            SceneManager.LoadScene("SelectorLvl");
         }
         else
         {
