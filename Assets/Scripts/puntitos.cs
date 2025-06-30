@@ -26,7 +26,7 @@ public class puntitos : MonoBehaviour
 
         if (score >= RemoteConfigManager.puntosVictoria)
         {
-            Victoria();
+            //Victoria();
         }
 
         UpdateScoreUI();
@@ -40,7 +40,7 @@ public class puntitos : MonoBehaviour
     private void Victoria()
     {
         victoryTriggered = true;
-        Debug.Log("🎉 ¡Ganaste! Puntos: " + score);
+        Debug.Log("¡Ganaste! Puntos: " + score);
         SceneManager.LoadScene("Victoria"); // Cambia por escena
     }
 }

@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 2
   explosionPrefab: {fileID: 8603657560237709848, guid: eda24a13702c6a44b9d9cfc6bfdb1971, type: 3}
+  nombreObjeto: Murcielago
 --- !u!114 &-6642198729368493254
 MonoBehaviour:
   m_ObjectHideFlags: 0

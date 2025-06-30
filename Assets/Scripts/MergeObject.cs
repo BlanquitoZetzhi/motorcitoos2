@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class MergeObject : MonoBehaviour
 {
     public int level;
+    public string nombreObjeto; // ← Este es clave
     private bool hasMerged = false;
     private MergeManager mergeManager;
     private puntitos scoreManager;
@@ -24,7 +24,7 @@ public class MergeObject : MonoBehaviour
         MergeObject other = collision.gameObject.GetComponent<MergeObject>();
         if (other == null || other.level != this.level || other.hasMerged) return;
 
-        // Para evitar que ambos ejecuten fusión, solo el de menor ID lo hace
+        // Solo uno ejecuta la fusión
         if (this.GetInstanceID() < other.GetInstanceID())
         {
             MergeWith(other);
@@ -40,22 +40,26 @@ public class MergeObject : MonoBehaviour
 
         if (scoreManager != null)
         {
-            float puntos = 10 * (level + 1); // nivel del objeto resultante
+            float puntos = 10 * (level + 1);
             scoreManager.AgregarPuntos(puntos);
         }
 
-        // Si NO es el último nivel
         if (level < mergeManager.prefabs.Length - 1)
         {
-            mergeManager.SpawnMerged(level + 1, spawnPosition);
+            GameObject nuevoObjeto = mergeManager.SpawnMerged(level + 1, spawnPosition);
 
-            // Verificamos si el nuevo objeto será el último nivel
-            if (level + 1 == mergeManager.prefabs.Length - 1)
+            if (nuevoObjeto != null)
             {
-                if (explosionPrefab != null)
+                MergeObject mergeScript = nuevoObjeto.GetComponent<MergeObject>();
+                if (mergeScript != null)
                 {
-                    GameObject explosion = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
-                    Destroy(explosion, 1f);
+                    FindObjectOfType<GameProgressManager>().ReportarFusion(mergeScript.nombreObjeto);
+
+                    if (mergeScript.level == mergeManager.prefabs.Length - 1 && explosionPrefab != null)
+                    {
+                        GameObject explosion = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
+                        Destroy(explosion, 1f);
+                    }
                 }
             }
 
@@ -63,7 +67,6 @@ public class MergeObject : MonoBehaviour
         }
         else
         {
-            // Si este objeto ya era el último nivel (por seguridad)
             CurrencyManager.Instance.AddToken(1);
         }
 

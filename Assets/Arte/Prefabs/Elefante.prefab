@@ -191,6 +191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+  explosionPrefab: {fileID: 0}
+  nombreObjeto: Elefante
 --- !u!114 &3224271024692513081
 MonoBehaviour:
   m_ObjectHideFlags: 0
