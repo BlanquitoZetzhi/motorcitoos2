@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3141077832486011876}
   - component: {fileID: -4029660870315069178}
   - component: {fileID: 3224271024692513081}
-  m_Layer: 7
+  m_Layer: 13
   m_Name: Elefante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 7473728272056967072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8959, y: -1.7958, z: 0}
-  m_LocalScale: {x: 2.1073892, y: 2.1073892, z: 2.1073892}
+  m_LocalPosition: {x: -1.9012, y: -1.8185, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   nombreObjeto: Elefante
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 8603657560237709848, guid: eda24a13702c6a44b9d9cfc6bfdb1971, type: 3}
 --- !u!114 &3224271024692513081
 MonoBehaviour:
   m_ObjectHideFlags: 0

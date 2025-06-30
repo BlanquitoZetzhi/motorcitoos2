@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3908504886075672889}
   - component: {fileID: -2025487726846150277}
   - component: {fileID: 496405260124469819}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: "Le\xF3n"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 7574260932632605651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: -0.95, z: 0}
-  m_LocalScale: {x: 1.253208, y: 1.253208, z: 1.253208}
+  m_LocalPosition: {x: -5, y: -0.99531, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   nombreObjeto: Leon
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 8603657560237709848, guid: eda24a13702c6a44b9d9cfc6bfdb1971, type: 3}
 --- !u!114 &496405260124469819
 MonoBehaviour:
   m_ObjectHideFlags: 0

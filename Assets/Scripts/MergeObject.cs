@@ -40,6 +40,9 @@ public class MergeObject : MonoBehaviour
         hasMerged = true;
         other.hasMerged = true;
 
+        Destroy(gameObject);
+        Destroy(other.gameObject);
+
         Vector3 spawnPosition = (transform.position + other.transform.position) / 2f;
 
         if (scoreManager != null)
@@ -61,6 +64,7 @@ public class MergeObject : MonoBehaviour
 
                     audioSource.Play();
 
+
                     if (mergeScript.level == mergeManager.prefabs.Length - 1 && explosionPrefab != null)
                     {
                         GameObject explosion = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
@@ -68,14 +72,10 @@ public class MergeObject : MonoBehaviour
                     }
                 }
             }
-
-            Destroy(other.gameObject);
         }
         else
         {
             CurrencyManager.Instance.AddToken(1);
         }
-
-        Destroy(gameObject);
     }
 }

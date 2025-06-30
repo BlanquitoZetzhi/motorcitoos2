@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3261345682900859124}
   - component: {fileID: -813264987459953389}
   - component: {fileID: 3588109508417171594}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: Zebra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 3134472206386099091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2934, y: 0.18998, z: 0}
-  m_LocalScale: {x: 1.9124445, y: 1.9124445, z: 1.9124445}
+  m_LocalPosition: {x: -2.2875, y: 0.15676, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

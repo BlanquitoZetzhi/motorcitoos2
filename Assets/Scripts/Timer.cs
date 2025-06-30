@@ -66,7 +66,7 @@ public class Timer : MonoBehaviour
 
     private void ActualizarContador()
     {
-        Debug.Log($"🕒 Actualizando contador: {minutes}:{seconds:00.0}");
+        //Debug.Log($"🕒 Actualizando contador: {minutes}:{seconds:00.0}");
 
         if (TimerText == null)
         {

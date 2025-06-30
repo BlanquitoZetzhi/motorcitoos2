@@ -44,6 +44,6 @@ public class Spawner : MonoBehaviour
         }
 
         GameObject obj = Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
-        obj.transform.localScale = Vector3.one * RemoteConfigManager.objectScale;
+        //obj.transform.localScale = Vector3.one * RemoteConfigManager.objectScale;
     }
 }

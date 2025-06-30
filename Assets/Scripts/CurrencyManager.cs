@@ -12,7 +12,7 @@ public class CurrencyManager : MonoBehaviour
 {
     public static CurrencyManager Instance;
 
-    public int tokens = 0;
+    public int tokens= 0;
     public TextMeshProUGUI tokenText;
 
     private void Awake()
