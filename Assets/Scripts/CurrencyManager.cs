@@ -58,7 +58,7 @@ public class CurrencyManager : MonoBehaviour
 
     private void LoadTokens()
     {
-        tokens = PlayerPrefs.GetInt("Tokens", 0);
+        tokens = PlayerPrefs.GetInt("Tokens");
     }
 
     public void ResetTokens()

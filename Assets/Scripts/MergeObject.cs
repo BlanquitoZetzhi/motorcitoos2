@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MergeObject : MonoBehaviour
 {
     public int level;
     public string nombreObjeto; // ← Este es clave
     private bool hasMerged = false;
+    private AudioSource audioSource;
     private MergeManager mergeManager;
     private puntitos scoreManager;
     public GameObject explosionPrefab;
@@ -15,6 +17,7 @@ public class MergeObject : MonoBehaviour
     {
         mergeManager = FindObjectOfType<MergeManager>();
         scoreManager = FindObjectOfType<puntitos>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,6 +31,7 @@ public class MergeObject : MonoBehaviour
         if (this.GetInstanceID() < other.GetInstanceID())
         {
             MergeWith(other);
+           
         }
     }
 
@@ -54,6 +58,8 @@ public class MergeObject : MonoBehaviour
                 if (mergeScript != null)
                 {
                     FindObjectOfType<GameProgressManager>().ReportarFusion(mergeScript.nombreObjeto);
+
+                    audioSource.Play();
 
                     if (mergeScript.level == mergeManager.prefabs.Length - 1 && explosionPrefab != null)
                     {
