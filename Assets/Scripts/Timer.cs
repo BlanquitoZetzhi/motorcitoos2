@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,66 +13,79 @@ public class Timer : MonoBehaviour
     private int minutes;
     private float seconds;
     private bool gameOverTriggered = false;
+    private bool timerIniciado = false;
 
-    private void Start()
+    private IEnumerator Start()
     {
-        minutes = RemoteConfigManager.timerMinutes;
-        seconds = RemoteConfigManager.timerSeconds;
+        Debug.Log("⏳ Esperando Remote Config...");
+        while (!RemoteConfigManager.configLoaded)
+            yield return null;
+
+        minutes = Mathf.Max(RemoteConfigManager.timerMinutes, 0);
+        seconds = Mathf.Max(RemoteConfigManager.timerSeconds, 0f);
+
+        Debug.Log($"✅ Timer inicializado en: {minutes}:{seconds:00.0}");
+
         ActualizarContador();
+        timerIniciado = true; // ✅ Ahora sí puede empezar a contar
     }
 
     private void Update()
     {
-        if (gameOverTriggered) return;
+        if (!timerIniciado || gameOverTriggered)
+            return;
+
+        if (minutes <= 0 && seconds <= 0f)
+        {
+            PerderPorTiempo();
+            return;
+        }
 
         seconds -= Time.deltaTime;
 
-        if (seconds <= 0)
+        if (seconds < 0f)
         {
             if (minutes > 0)
             {
                 minutes--;
-                seconds = 60;
+                seconds += 60f;
             }
             else
             {
-                seconds = 0;
-                PerderPorTiempo();
-                return;
+                seconds = 0f;
             }
         }
 
         ActualizarContador();
 
-        if (seconds < limitSeconds && minutes < 1)
+        if (minutes < 1 && seconds < limitSeconds)
         {
             TimerText.color = dangerColor;
         }
     }
 
-    private void PerderPorTiempo()
+    private void ActualizarContador()
     {
-        gameOverTriggered = true;
-        Debug.Log("⏰ Tiempo agotado, perdiste.");
-        SceneManager.LoadScene("Perder"); // Cambia por escena
+        Debug.Log($"🕒 Actualizando contador: {minutes}:{seconds:00.0}");
+
+        if (TimerText == null)
+        {
+            Debug.LogWarning("⚠️ TimerText no está asignado en el Inspector.");
+            return;
+        }
+
+        if (minutes == 0 && seconds < 10f)
+            TimerText.text = $"{minutes}:{seconds:0.0}";
+        else
+            TimerText.text = $"{minutes}:{seconds:00}";
     }
 
-    public void ActualizarContador()
+    private void PerderPorTiempo()
     {
-        if (seconds < 9.9f)
-        {
-            if (minutes < 1)
-            {
-                TimerText.text = minutes + ":" + seconds.ToString("0.0");
-            }
-            else
-            {
-                TimerText.text = minutes + ":0" + seconds.ToString("f0");
-            }
-        }
-        else
-        {
-            TimerText.text = minutes + ":" + seconds.ToString("f0");
-        }
+        if (gameOverTriggered) return;
+        gameOverTriggered = true;
+
+        Debug.Log($"⛔ Game over llamado con: {minutes}:{seconds:00.0}");
+        SceneManager.LoadScene("Perder");
     }
 }

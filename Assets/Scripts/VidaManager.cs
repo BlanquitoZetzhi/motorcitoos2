@@ -8,10 +8,11 @@ public class VidaManager : MonoBehaviour
 {
     public static VidaManager Instance;
     public TextMeshProUGUI vidasTexto;
-    public int vidas = 3;
+    public int vidas;
 
     private void Awake()
     {
+        vidas = RemoteConfigManager.hp;
         if (Instance == null)
         {
             Instance = this;
@@ -21,6 +22,8 @@ public class VidaManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        vidasTexto.text = "Vidas: " + vidas;
     }
 
     public void PerderVida()
