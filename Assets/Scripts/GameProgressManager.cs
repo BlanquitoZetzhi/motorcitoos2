@@ -79,11 +79,19 @@ public class GameProgressManager : MonoBehaviour
 
         victoriaMostrada = true;
 
-        // Guardamos en qué nivel quedó
+        Debug.Log("¡Juego terminado por progreso!");
+
+        //Desbloqueo progresivo
+        int nivelDesbloqueado = PlayerPrefs.GetInt("NivelMaxDesbloqueado", 0);
+        if (nivelActual > nivelDesbloqueado)
+        {
+            PlayerPrefs.SetInt("NivelMaxDesbloqueado", nivelActual);
+        }
+
+        //Guardamos en qué nivel quedó para continuar
         PlayerPrefs.SetInt("NivelGuardado", nivelActual);
         PlayerPrefs.Save();
 
-        Debug.Log(" ¡Juego terminado por progreso!");
         SceneManager.LoadScene("Victoria");
     }
 }
