@@ -62,8 +62,6 @@ public class MergeObject : MonoBehaviour
                 {
                     FindObjectOfType<GameProgressManager>().ReportarFusion(mergeScript.nombreObjeto);
 
-                    audioSource.Play();
-
 
                     if (mergeScript.level == mergeManager.prefabs.Length - 1 && explosionPrefab != null)
                     {
