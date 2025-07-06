@@ -23,7 +23,7 @@ public class EscudoManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        escudosTexto.text = "Escudos: " + escudos;
+        escudosTexto.text = " " + escudos;
     }
 
     public void PerderVida()
@@ -38,7 +38,7 @@ public class EscudoManager : MonoBehaviour
     {
         if (escudosTexto != null)
         {
-            escudosTexto.text = "Escudos: " + escudos;
+            escudosTexto.text = " " + escudos;
         }
     }
 }

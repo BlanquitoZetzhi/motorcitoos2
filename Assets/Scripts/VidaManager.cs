@@ -23,7 +23,7 @@ public class VidaManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        vidasTexto.text = "Vidas: " + vidas;
+        vidasTexto.text = " " + vidas;
     }
 
     public void PerderVida()
@@ -43,7 +43,7 @@ public class VidaManager : MonoBehaviour
     {
         if (vidasTexto != null)
         {
-            vidasTexto.text = "Vidas: " + vidas;
+            vidasTexto.text = " " + vidas;
         }
     }
 }
