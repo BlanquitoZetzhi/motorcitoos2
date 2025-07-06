@@ -40,33 +40,39 @@ public class MergeObject : MonoBehaviour
         hasMerged = true;
         other.hasMerged = true;
 
+        // 1) Sonido de fusión
+        if (mergeManager != null)
+            mergeManager.PlayMergeSound();
+
+        // 2) Destruir objetos viejos
         Destroy(gameObject);
         Destroy(other.gameObject);
 
-        Vector3 spawnPosition = (transform.position + other.transform.position) / 2f;
-
+        // 3) Puntos
+        Vector3 spawnPos = (transform.position + other.transform.position) / 2f;
         if (scoreManager != null)
         {
-            float puntos = 10 * (level + 1);
-            scoreManager.AgregarPuntos(puntos);
+            float pts = 10 * (level + 1);
+            scoreManager.AgregarPuntos(pts);
         }
 
+        // 4) Spawn siguiente nivel de merge
         if (level < mergeManager.prefabs.Length - 1)
         {
-            GameObject nuevoObjeto = mergeManager.SpawnMerged(level + 1, spawnPosition);
-
-            if (nuevoObjeto != null)
+            GameObject nuevo = mergeManager.SpawnMerged(level + 1, spawnPos);
+            if (nuevo != null)
             {
-                MergeObject mergeScript = nuevoObjeto.GetComponent<MergeObject>();
-                if (mergeScript != null)
+                var ms = nuevo.GetComponent<MergeObject>();
+                if (ms != null)
                 {
-                    FindObjectOfType<GameProgressManager>().ReportarFusion(mergeScript.nombreObjeto);
+                    FindObjectOfType<GameProgressManager>()
+                        .ReportarFusion(ms.nombreObjeto);
 
-
-                    if (mergeScript.level == mergeManager.prefabs.Length - 1 && explosionPrefab != null)
+                    if (ms.level == mergeManager.prefabs.Length - 1
+                        && explosionPrefab != null)
                     {
-                        GameObject explosion = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
-                        Destroy(explosion, 1f);
+                        var expl = Instantiate(explosionPrefab, spawnPos, Quaternion.identity);
+                        Destroy(expl, 1f);
                     }
                 }
             }
