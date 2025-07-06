@@ -13,11 +13,16 @@ public class MergeObject : MonoBehaviour
     private puntitos scoreManager;
     public GameObject explosionPrefab;
 
+    private bool destroyOnExitCamera = false;
+
     void Start()
     {
         mergeManager = FindObjectOfType<MergeManager>();
         scoreManager = FindObjectOfType<puntitos>();
         audioSource = GetComponent<AudioSource>();
+
+        if (level == 3)
+            destroyOnExitCamera = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -79,7 +84,15 @@ public class MergeObject : MonoBehaviour
         }
         else
         {
-            CurrencyManager.Instance.AddToken(1);
+            CurrencyManager.Instance.AddToken(Random.Range(1, 3 + 1));
         }
     }
+
+    private void OnBecameInvisible()
+    {
+        // Solo destruimos fuera de cámara los de level 3
+        if (destroyOnExitCamera)
+            Destroy(gameObject);
+    }
+
 }
