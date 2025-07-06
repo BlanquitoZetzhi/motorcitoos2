@@ -86,6 +86,9 @@ public class Timer : MonoBehaviour
         gameOverTriggered = true;
 
         Debug.Log($"⛔ Game over llamado con: {minutes}:{seconds:00.0}");
-        SceneManager.LoadScene("Perder");
+        AdsManager.Instance.ShowInterstitialAd(() =>
+        {
+            SceneManager.LoadScene("Perder");
+        });
     }
 }

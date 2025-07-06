@@ -91,8 +91,11 @@ public class GameProgressManager : MonoBehaviour
         //Guardamos en qué nivel quedó para continuar
         PlayerPrefs.SetInt("NivelGuardado", nivelActual);
         PlayerPrefs.Save();
-
-        SceneManager.LoadScene("Victoria");
+        // Mostramos el anuncio antes de la escena de victoria
+        AdsManager.Instance.ShowInterstitialAd(() =>
+        {
+            SceneManager.LoadScene("Victoria");
+        });
     }
 }
 

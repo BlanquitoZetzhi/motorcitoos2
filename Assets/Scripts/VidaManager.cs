@@ -35,7 +35,11 @@ public class VidaManager : MonoBehaviour
 
         if (vidas <= 0)
         {
-            SceneManager.LoadScene("Perder"); //scena perder
+            // Mostramos el anuncio antes de la escena de derrota
+            AdsManager.Instance.ShowInterstitialAd(() =>
+            {
+                SceneManager.LoadScene("Perder");
+            });
         }
     }
 
