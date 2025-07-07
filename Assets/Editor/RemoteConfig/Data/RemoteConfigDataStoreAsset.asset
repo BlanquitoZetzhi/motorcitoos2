@@ -12,52 +12,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"90b02d4d-a6ab-4c54-96c7-6475e3a20cc6\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"372154e1-8609-4876-b405-8edb4143a18e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"a520daf7-9b5c-466c-b6a3-705d13748b9f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"c5c9ca63-4f2b-40f8-af93-f67ecfaa6035\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec527bd-f85c-4923-868d-0f4c4f627d9b\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"26c46d89-863b-40ed-a163-cf7fb284ab78\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"433df495-f4bd-4764-beec-1415bd1c4423\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"df631c49-d39c-42ce-b8f6-649c869b38e1\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"869342db-fe0f-4291-9350-fc101c9f086b\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"fece3bfe-26bd-48e1-a0e8-cc041877e5a4\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"5df37339-04ce-4031-9da4-a8dd684b16a7\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"e3c8fb22-0176-4d93-99c2-906ee7da7327\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"23f5472b-d1fc-46a0-bdb0-599f015157b4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"276a4fc7-3e84-4d1f-b8d1-2bbed2af0a70\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a0239d59-e69a-4dd4-a567-f37d4008c0b3\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e15d8caf-f714-4764-a27b-ae961ee527dd\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"10894daa-271a-4d31-831c-c5ec9f5efc57\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"f5ebea99-27a3-482c-8a3b-9af82ffdb77c\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
     }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"90b02d4d-a6ab-4c54-96c7-6475e3a20cc6\"\r\n   
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"372154e1-8609-4876-b405-8edb4143a18e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"a520daf7-9b5c-466c-b6a3-705d13748b9f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"c5c9ca63-4f2b-40f8-af93-f67ecfaa6035\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec527bd-f85c-4923-868d-0f4c4f627d9b\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"26c46d89-863b-40ed-a163-cf7fb284ab78\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"433df495-f4bd-4764-beec-1415bd1c4423\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"df631c49-d39c-42ce-b8f6-649c869b38e1\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"869342db-fe0f-4291-9350-fc101c9f086b\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"fece3bfe-26bd-48e1-a0e8-cc041877e5a4\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"5df37339-04ce-4031-9da4-a8dd684b16a7\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"e3c8fb22-0176-4d93-99c2-906ee7da7327\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"23f5472b-d1fc-46a0-bdb0-599f015157b4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"276a4fc7-3e84-4d1f-b8d1-2bbed2af0a70\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a0239d59-e69a-4dd4-a567-f37d4008c0b3\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e15d8caf-f714-4764-a27b-ae961ee527dd\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"10894daa-271a-4d31-831c-c5ec9f5efc57\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"f5ebea99-27a3-482c-8a3b-9af82ffdb77c\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
     }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"d7f9d2a2-646d-4394-bf73-19ef54a5fbf2\",\r\n   
