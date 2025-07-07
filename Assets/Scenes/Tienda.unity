@@ -992,7 +992,6 @@ GameObject:
   - component: {fileID: 1225841496}
   - component: {fileID: 1225841495}
   - component: {fileID: 1225841494}
-  - component: {fileID: 1225841497}
   m_Layer: 5
   m_Name: Tokens
   m_TagString: Untagged
@@ -1116,22 +1115,6 @@ RectTransform:
   m_AnchoredPosition: {x: -181, y: 230}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1225841497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225841493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bb2a877f098011419e2e0890b6f1a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 
-  costo: 0
-  buyButton: {fileID: 0}
-  costoText: {fileID: 0}
 --- !u!1 &1405350026
 GameObject:
   m_ObjectHideFlags: 0

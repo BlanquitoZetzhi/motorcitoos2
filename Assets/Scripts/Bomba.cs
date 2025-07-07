@@ -24,7 +24,15 @@ public class Bomba : MonoBehaviour
         }
 
         //-1 hp
-        VidaManager.Instance.PerderVida();
+        if(EscudoManager.Instance.escudos == 0)
+        {
+            VidaManager.Instance.PerderVida();
+        }
+        else
+        {
+            EscudoManager.Instance.PerderEscudo();
+        }
+        
 
         Destroy(gameObject);
     }

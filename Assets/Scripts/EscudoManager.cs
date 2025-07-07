@@ -12,7 +12,7 @@ public class EscudoManager : MonoBehaviour
 
     private void Awake()
     {
-       // escudos = RemoteConfigManager.shield;
+       escudos = RemoteConfigManager.hp;
         if (Instance == null)
         {
             Instance = this;
@@ -26,7 +26,7 @@ public class EscudoManager : MonoBehaviour
         escudosTexto.text = " " + escudos;
     }
 
-    public void PerderVida()
+    public void PerderEscudo()
     {
         escudos--;
         Debug.Log("¡Perdiste un Escudo! Escudos restantes: " + escudos);

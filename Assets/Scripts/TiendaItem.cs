@@ -15,8 +15,9 @@ public class TiendaItem : MonoBehaviour
 
     private void Start()
     {
+        
         tiendaManager = FindObjectOfType<TiendaManager>();
-        costoText.text = costo.ToString();
+        costoText.text = costo.ToString($"");
 
         buyButton.onClick.AddListener(() => tiendaManager.ComprarItem(itemId, costo));
     }
@@ -31,6 +32,7 @@ public class TiendaItem : MonoBehaviour
 
     public void MarcarComprado()
     {
+        
         buyButton.interactable = false;
         costoText.text = "Comprado";
     }
