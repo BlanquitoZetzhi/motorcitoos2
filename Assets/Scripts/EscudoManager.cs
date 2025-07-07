@@ -12,7 +12,7 @@ public class EscudoManager : MonoBehaviour
 
     private void Awake()
     {
-       escudos = RemoteConfigManager.hp;
+        escudos = RemoteConfigManager.shield;
         if (Instance == null)
         {
             Instance = this;

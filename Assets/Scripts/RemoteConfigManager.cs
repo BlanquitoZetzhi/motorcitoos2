@@ -22,6 +22,7 @@ public class RemoteConfigManager : MonoBehaviour
     public static int timerMinutes = 1;
     public static float timerSeconds = 0f;
     public static int hp = 5;
+    public static int shield = 0;
 
     public static bool configLoaded = false;
 
@@ -61,6 +62,7 @@ public class RemoteConfigManager : MonoBehaviour
         timerMinutes = config.GetInt("timerMinutes", 1);
         timerSeconds = config.GetFloat("timerSeconds", 0f);
         hp = config.GetInt("hp", 1);
+        shield = config.GetInt("shield", 0);
 
         configLoaded = true;
 

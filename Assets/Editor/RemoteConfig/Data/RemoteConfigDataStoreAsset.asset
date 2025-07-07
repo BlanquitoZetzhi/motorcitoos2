@@ -12,64 +12,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b7c36a94-e879-44b1-b292-9ff48329cdb1\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d72c9151-ac53-4852-9525-f2db78374635\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"57f86095-0ce7-433e-882a-fbae73c5d2ef\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"b5f34cde-31c2-4d1e-8258-4c41b6bcc8e0\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"eddbd9b8-03fa-45aa-90ca-8b5ed7757723\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec7a250-a3b4-42e9-baf1-a014d3619397\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"4db4005f-06f7-444d-ade2-02b310a22cc9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"d21cdae3-09d4-44f2-9836-1f616dd8965b\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"67043188-69ae-4c3c-b7e3-a1a033fbc7fd\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e96208ae-558c-4d35-9e78-ad30473a8c49\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"6a8c58e9-082d-41cd-8afd-b4ab7416d77c\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"0c8bee34-379c-4115-86af-97449ca3ef76\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"a4857a62-eef7-4a37-aac1-b84bd937c9eb\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"27af5004-dfd3-4fbc-ad30-f20280f92e2e\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"794fa705-b83b-488a-8693-2a04922acef9\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a65a84f1-d0bd-458f-a1e7-ff193c17bd5e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"84246624-0a72-4d95-905b-c5b097a15aba\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"778dd416-b782-4d0c-b245-320cb9dfcbcb\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
-    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"54a11ca7-6813-42d8-92cf-fcf8f38dd849\"\r\n   
+    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"f6bb1800-ba54-48b0-97f7-029ad1b98d76\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"shield\",\r\n      \"type\": \"int\",\r\n     
-    \"value\": 1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"fbe95beb-7a4a-4651-9877-7f860ed81785\"\r\n    },\r\n    \"rs\": {\r\n     
-    \"key\": \"escudos\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n   
-    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b7c36a94-e879-44b1-b292-9ff48329cdb1\"\r\n   
+    \"value\": 0\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d72c9151-ac53-4852-9525-f2db78374635\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"57f86095-0ce7-433e-882a-fbae73c5d2ef\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"b5f34cde-31c2-4d1e-8258-4c41b6bcc8e0\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"eddbd9b8-03fa-45aa-90ca-8b5ed7757723\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec7a250-a3b4-42e9-baf1-a014d3619397\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"4db4005f-06f7-444d-ade2-02b310a22cc9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"d21cdae3-09d4-44f2-9836-1f616dd8965b\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"67043188-69ae-4c3c-b7e3-a1a033fbc7fd\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e96208ae-558c-4d35-9e78-ad30473a8c49\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"6a8c58e9-082d-41cd-8afd-b4ab7416d77c\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"0c8bee34-379c-4115-86af-97449ca3ef76\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"a4857a62-eef7-4a37-aac1-b84bd937c9eb\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"27af5004-dfd3-4fbc-ad30-f20280f92e2e\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"794fa705-b83b-488a-8693-2a04922acef9\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a65a84f1-d0bd-458f-a1e7-ff193c17bd5e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"84246624-0a72-4d95-905b-c5b097a15aba\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"778dd416-b782-4d0c-b245-320cb9dfcbcb\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
-    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"54a11ca7-6813-42d8-92cf-fcf8f38dd849\"\r\n   
+    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"f6bb1800-ba54-48b0-97f7-029ad1b98d76\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"shield\",\r\n      \"type\": \"int\",\r\n     
-    \"value\": 1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"fbe95beb-7a4a-4651-9877-7f860ed81785\"\r\n    },\r\n    \"rs\": {\r\n     
-    \"key\": \"escudos\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n   
-    }\r\n  }\r\n]"
+    \"value\": 0\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"d7f9d2a2-646d-4394-bf73-19ef54a5fbf2\",\r\n   
     \"name\": \"production\",\r\n    \"id\": \"4f28aac2-d3ae-4979-a8db-f31d2b16b37b\",\r\n   
     \"isDefault\": true,\r\n    \"createdAt\": \"2025-06-22T15:48:19Z\",\r\n    \"updatedAt\":
