@@ -12,6 +12,7 @@ public class MergeObject : MonoBehaviour
     private MergeManager mergeManager;
     private puntitos scoreManager;
     public GameObject explosionPrefab;
+    private CurrencyManager token;
 
     private bool destroyOnExitCamera = false;
 
@@ -73,19 +74,18 @@ public class MergeObject : MonoBehaviour
                     FindObjectOfType<GameProgressManager>()
                         .ReportarFusion(ms.nombreObjeto);
 
+                    
                     if (ms.level == mergeManager.prefabs.Length - 1
                         && explosionPrefab != null)
                     {
                         var expl = Instantiate(explosionPrefab, spawnPos, Quaternion.identity);
                         Destroy(expl, 1f);
+                        CurrencyManager.Instance.AddToken(Random.Range(1, 3 + 1));
                     }
                 }
             }
-        }
-        else
-        {
-            CurrencyManager.Instance.AddToken(Random.Range(1, 3 + 1));
-        }
+        } 
+      
     }
 
     private void OnBecameInvisible()
