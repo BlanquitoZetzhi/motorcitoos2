@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EscudoManager : MonoBehaviour
 {
@@ -36,10 +37,17 @@ public class EscudoManager : MonoBehaviour
 
     private void UpdateEscudosUI()
     {
+
         if (escudosTexto != null)
         {
             escudosTexto.text = " " + escudos;
         }
+    }
+
+    public void AddEscudos()
+    {
+        escudos++;
+        Debug.Log("agregaste escudos mostro");
     }
 }
 

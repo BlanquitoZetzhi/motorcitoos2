@@ -7,9 +7,13 @@ public class TiendaManager : MonoBehaviour
 {
     public TiendaItem[] items;  // Referencia a los ítems de la tienda
     public TextMeshProUGUI tokensText;
+    public VidaManager vidasManager;
+    public EscudoManager escudosManager;
 
     private void Start()
     {
+       
+
         UpdateTokensUI();
         foreach (TiendaItem item in items)
         {
@@ -25,6 +29,13 @@ public class TiendaManager : MonoBehaviour
             PlayerPrefs.SetInt("Item_" + itemId, 1); // Guardar como comprado
             PlayerPrefs.Save();
             UpdateTokensUI();
+
+           // if (itemId == "01")
+                //vidasManager.vidas++;
+
+           // if (itemId == "02")
+               // escudosManager.escudos++;
+
 
             Debug.Log("🛒 Compraste: " + itemId);
 

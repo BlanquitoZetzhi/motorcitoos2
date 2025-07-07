@@ -280,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 342902699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 571259401}
+        m_TargetAssemblyTypeName: EscudoManager, Assembly-CSharp
+        m_MethodName: AddEscudos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &342902699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +475,52 @@ Transform:
   - {fileID: 1405350027}
   - {fileID: 1875765776}
   m_Father: {fileID: 484919293}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &571259400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 571259402}
+  - component: {fileID: 571259401}
+  m_Layer: 0
+  m_Name: EscudoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &571259401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571259400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1c43758aaf8884f9233fb099e5a3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escudosTexto: {fileID: 0}
+  escudos: 0
+--- !u!4 &571259402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571259400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 969.6569, y: 840.69775, z: -17.40154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668257712
 GameObject:
@@ -665,6 +723,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729775487}
   m_CullTransparentMesh: 1
+--- !u!1 &929836244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929836246}
+  - component: {fileID: 929836245}
+  m_Layer: 0
+  m_Name: VidaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &929836245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929836244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523ddbb051c1e4a4dbf5f4618074b3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidasTexto: {fileID: 0}
+  vidas: 0
+--- !u!4 &929836246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929836244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 969.6569, y: 840.69775, z: -17.40154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &948625197
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +802,8 @@ MonoBehaviour:
   - {fileID: 940348545201851887}
   - {fileID: 2051984430}
   tokensText: {fileID: 1225841494}
+  vidasManager: {fileID: 0}
+  escudosManager: {fileID: 0}
 --- !u!4 &948625199
 Transform:
   m_ObjectHideFlags: 0
@@ -1128,7 +1234,7 @@ GameObject:
   - component: {fileID: 1405350029}
   - component: {fileID: 1405350028}
   m_Layer: 5
-  m_Name: Comprar Escudos
+  m_Name: Comprar Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1197,7 +1303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405350029}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 929836245}
+        m_TargetAssemblyTypeName: VidaManager, Assembly-CSharp
+        m_MethodName: AddVida
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1405350029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2750,7 +2868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb2a877f098011419e2e0890b6f1a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 
+  itemId: escudo
   costo: 8
   buyButton: {fileID: 342902698}
   costoText: {fileID: 1166586139}
@@ -2922,8 +3040,8 @@ RectTransform:
   - {fileID: 729775488}
   m_Father: {fileID: 484919293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.061591104, y: 0.055555556}
+  m_AnchorMax: {x: 0.9384089, y: 0.9990741}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3073,7 +3191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb2a877f098011419e2e0890b6f1a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 
+  itemId: vida
   costo: 5
   buyButton: {fileID: 1405350028}
   costoText: {fileID: 1875765777}
@@ -3187,3 +3305,5 @@ SceneRoots:
   - {fileID: 2045604968}
   - {fileID: 948625199}
   - {fileID: 1580242260}
+  - {fileID: 929836246}
+  - {fileID: 571259402}

@@ -26,7 +26,7 @@ public class puntitos : MonoBehaviour
 
         if (score >= RemoteConfigManager.puntosVictoria)
         {
-            //Victoria();
+            Victoria();
         }
 
         UpdateScoreUI();

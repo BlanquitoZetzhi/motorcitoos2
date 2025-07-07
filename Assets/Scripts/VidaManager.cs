@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class VidaManager : MonoBehaviour
 {
@@ -45,10 +46,18 @@ public class VidaManager : MonoBehaviour
 
     private void UpdateVidasUI()
     {
+
         if (vidasTexto != null)
         {
             vidasTexto.text = " " + vidas;
         }
     }
+
+    public void AddVida()
+    {
+        vidas++;
+        Debug.Log("agregaste vida mostro");
+    }
+
 }
 

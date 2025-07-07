@@ -12,56 +12,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d72c9151-ac53-4852-9525-f2db78374635\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5a7c0040-cc84-470a-acb1-b8f0d897dc19\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b5f34cde-31c2-4d1e-8258-4c41b6bcc8e0\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"c037bbee-449a-4d15-a3cf-a70ffb292cba\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec7a250-a3b4-42e9-baf1-a014d3619397\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"59248318-6f3c-47b4-a003-f425493406c2\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"d21cdae3-09d4-44f2-9836-1f616dd8965b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"9a90d3e9-136a-45c1-b536-7ceb3aaec2c6\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e96208ae-558c-4d35-9e78-ad30473a8c49\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8514c7b9-c1d3-40c8-819a-9588f3e62325\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"0c8bee34-379c-4115-86af-97449ca3ef76\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"084e6de5-5b6a-43ca-abf7-e6269157b9d4\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"27af5004-dfd3-4fbc-ad30-f20280f92e2e\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"value\": 300.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"70165de5-ebcb-4141-abcb-89fa89bda17b\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a65a84f1-d0bd-458f-a1e7-ff193c17bd5e\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b9d591ec-053d-4880-b1f7-4363e9c7d05d\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"778dd416-b782-4d0c-b245-320cb9dfcbcb\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"value\": 30.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"70adfb69-8923-479c-bcc9-947b363027d3\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
-    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"f6bb1800-ba54-48b0-97f7-029ad1b98d76\"\r\n   
+    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"63b00ef5-ec6e-4114-872c-4049742f2088\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"shield\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 0\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d72c9151-ac53-4852-9525-f2db78374635\"\r\n   
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5a7c0040-cc84-470a-acb1-b8f0d897dc19\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"spawnInterval\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b5f34cde-31c2-4d1e-8258-4c41b6bcc8e0\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"c037bbee-449a-4d15-a3cf-a70ffb292cba\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"spawnRandomPositions\",\r\n      \"type\": \"bool\",\r\n      \"value\":
-    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"3ec7a250-a3b4-42e9-baf1-a014d3619397\"\r\n   
+    true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"59248318-6f3c-47b4-a003-f425493406c2\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"objectScale\",\r\n      \"type\": \"float\",\r\n     
     \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"d21cdae3-09d4-44f2-9836-1f616dd8965b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"9a90d3e9-136a-45c1-b536-7ceb3aaec2c6\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"activeSkin\",\r\n      \"type\": \"string\",\r\n      \"value\": \"default\"\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e96208ae-558c-4d35-9e78-ad30473a8c49\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8514c7b9-c1d3-40c8-819a-9588f3e62325\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"mergeBonusMultiplier\",\r\n      \"type\":
     \"float\",\r\n      \"value\": 1.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"0c8bee34-379c-4115-86af-97449ca3ef76\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"084e6de5-5b6a-43ca-abf7-e6269157b9d4\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"puntosVictoria\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 100.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"27af5004-dfd3-4fbc-ad30-f20280f92e2e\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"value\": 300.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"70165de5-ebcb-4141-abcb-89fa89bda17b\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"timerMinutes\",\r\n      \"type\": \"int\",\r\n      \"value\": 1\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a65a84f1-d0bd-458f-a1e7-ff193c17bd5e\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b9d591ec-053d-4880-b1f7-4363e9c7d05d\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"timerSeconds\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 15.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"778dd416-b782-4d0c-b245-320cb9dfcbcb\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"value\": 30.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"70adfb69-8923-479c-bcc9-947b363027d3\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"hp\",\r\n      \"type\": \"int\",\r\n      \"value\": 3\r\n    }\r\n 
-    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"f6bb1800-ba54-48b0-97f7-029ad1b98d76\"\r\n   
+    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"63b00ef5-ec6e-4114-872c-4049742f2088\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"shield\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 0\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"d7f9d2a2-646d-4394-bf73-19ef54a5fbf2\",\r\n   
